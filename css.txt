@@ -1,0 +1,112 @@
+<div class="moviesec">
+                <!-- <div class="arrow">
+                    <img src="./img/r-arrow.png" alt="" id="b-btn">
+                </div> -->
+                <div class="movieimgs">
+                    <div>
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+
+                    </div>
+                    <div>
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                    </div>
+                </div>
+                <!-- <div class="arrow">
+                    <img src="./img/r-arrow.png" alt="" id="n-btn">
+                </div> -->
+            </div>
+            <div class="moviesec">
+                <!-- <div class="arrow">
+                    <img src="./img/r-arrow.png" alt="" id="b-btn">
+                </div> -->
+                <div class="movieimgs">
+                    <div>
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                        <img src="./img/potrait/1.jpg" alt="">
+                    </div>
+                </div>
+                <!-- <div class="arrow">
+                    <img src="./img/r-arrow.png" alt="" id="n-btn">
+                </div> -->
+            </div>
+================================================================================================================
+
+.moviesec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    /* position: relative; */
+}
+
+.movieimgs{
+    border: 1px solid white;
+    border-radius: 5px;
+    max-height: 300px;
+    width: 70vw;
+    display: flex;
+    overflow-x: scroll;
+    /* border: 1px solid red; */
+}
+
+.movieimgs div{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-row-gap: 15px;
+    flex: none;
+    padding: 10px;
+}
+
+.movieimgs div{
+    width: 80vw;
+}
+
+.movieimgs div img{
+    height: 200px;
+    width: 150px;
+    transition: transform 0.5s;
+}
+
+.movieimgs img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.movieimgs::-webkit-scrollbar, .movieimgs div::-webkit-scrollbar{
+    display: none;
+}
+
+.arrow img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    background-color: aliceblue;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+

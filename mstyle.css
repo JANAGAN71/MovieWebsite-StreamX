@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Josefin+Slab&family=MuseoModerno:wght@100;200&family=Poppins:wght@300;500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+span{
+    color: red;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.navcont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+.navcont p{
+    color: white;
+}
+
+.searchCont{
+    flex: 1;
+    height: 60px;
+    margin: 0 20px 10px 10px;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.navcont a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchbar{
+    position: absolute;
+}
+
+.searchbar input{
+    background-color: rgb(31, 30, 30);
+    height: 40px;
+    width: 300px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.logo-cont{
+    flex: 2;
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 400px;
+}
+
+.logo-cont img{
+    height: 35px;
+    width: 35px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+    border: 1.5px solid white;
+    letter-spacing: 1px;
+    margin: 5px;
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px 0 ;
+}
+
+.topcont{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.topcont p{
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.logo span{
+    color: red;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.moviepart{
+    height: 100%;
+    width: 100%;
+}
+
+.moviebox img{
+    height: 300px;
+    width: 200px;
+    margin: 10px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+.moviebox{
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+#search-item{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.box{
+    position: relative;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.moviebox img:hover{
+    opacity: 0.5;
+}
+.data{
+    position: absolute;
+    top: 70%;
+    left: 10px;
+    font-weight: 500;
+    background: transparent;
+}
+
+.data span{
+    color: gold;
+    font-weight: 600;
+}
+
+.box:hover #play{
+    opacity: 1;
+    cursor: pointer;
+    visibility: visible;
+    font-size: 40px;
+    padding: 10px 10px 10px 15px;
+    color: white;
+}
+
+#play{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    color: white;
+    visibility: hidden;
+}
+
+/* .box:hover #play{
+    visibility: visible;
+    background-color:white;
+    z-index: 1;
+} */

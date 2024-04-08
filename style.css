@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Josefin+Slab&family=MuseoModerno:wght@100;200&family=Poppins:wght@300;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.5s;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-cont{
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 400px;
+}
+
+.logo-cont a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-cont img{
+    height: 35px;
+    width: 35px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+    border: 1.5px solid white;
+    letter-spacing: 1px;
+    margin: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 5px 0 ;
+}
+
+.logo p{
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.logo span{
+    color: red;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.nav-cont{
+    flex: 2;
+}
+
+.menu-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-cont a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.li-items {
+    list-style-type: none;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+.pro-cont{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+}
+
+.propic{
+    position: relative;
+    height: 35px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.propic a{
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    color: red;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.propic a:hover{
+    color: black;
+}
+
+
+.moviebox{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#bg-img{
+    position: absolute;
+    min-height: calc(100vh - 50px);
+    width: 100vw;
+    margin-top: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: bg-img 1s linear;
+    opacity: 0.5;
+}
+
+.position span{
+    background: transparent;
+    color:gold;
+}
+
+.position span1{
+    background: transparent;
+    color: red;
+    font-size: 50px;
+}
+.position p{
+    position: absolute;
+    height: 50vh;
+    width: 60vw;
+    color: white;
+    top: 130px;
+    left: 50px;
+    background: transparent;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.boxes{
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    left: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width:300px;
+    background: transparent;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.boxes p{
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid white;
+    padding: 3px;
+    letter-spacing: 1px;
+    border-radius: 3px;
+}
+
+.btn1{
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+    font-size: 19px;
+    border-radius: 5px;
+    background-color: rgb(176, 252, 63);
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: white;
+    transition: 0.5s linear;
+}
+
+.btn1 img{
+    height: 25px;
+    width: 25px;
+    background: transparent;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.allsec{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 100px;
+    margin-left: 125px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+#genre{
+    width: calc(100vw - 150px);
+}
+
+.allsec p{
+    top: 10%;
+    left: 30px;
+    color: white;
+}
+.box1{
+    flex: 1;
+}
+
+.box2{
+    flex: 1;
+}
+
+.box3{
+    flex: 1;
+}
+
+
+.allsec img{
+    height: 100px;
+    width: 290px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.sbox1, .sbox2, .sbox3, .sbox4,.sbox5, .sbox6, .sbox7, .sbox8, .sbox9, .sbox10, .sbox11, .sbox12{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 295px;
+}
+
+.sbox1:hover p{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.sbox2:hover p{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.sbox1:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sbox2:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sbox3:hover p{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.sbox4:hover p{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.sbox3:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sbox4:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sbox5:hover p{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.sbox6:hover p{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.sbox5:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sbox6:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* - */
+
+.sbox1 p, .sbox2 p, .sbox3 p, .sbox4 p, .sbox5 p, .sbox6 p, .sbox7 p, .sbox8 p, .sbox9 p, .sbox10 p, .sbox11 p, .sbox12 p{
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    top: 50px;
+    left: 110px;
+    background: transparent;
+    visibility: hidden;
+}
+
+
+.sbox7:hover p{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.sbox8:hover p{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.sbox7:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sbox8:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sbox9:hover p{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.sbox10:hover p{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.sbox9:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sbox10:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sbox11:hover p{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.sbox12:hover p{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.sbox11:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sbox12:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sec2{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 40px ;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 0.5s;
+    /* border: 2px solid red; */
+}
+#popular{
+    height: calc(100vh -100px);
+    margin-top: 100px;
+}
+.sec2 span{
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    color: red;
+}
+
+.moviesec img{
+    max-height: 200px;
+    width: 295px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.moviesec{
+    display: flex;
+    min-height: 25vh;
+    padding: 10px;
+    overflow-x: auto;
+    position: relative;
+}
+
+.moviesec .wrapper{
+    min-width: 300px;
+    height: 200px;
+}
+
+.wrapper{
+    margin: 5px;
+    transition: transform 0.5s;
+}
+
+.wrapper:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.moviesec::-webkit-scrollbar{
+    display: none;
+}
+
+.names{
+    color: white;
+    font-size: 25px;
+}
+
+.trial{
+    height: 20vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(178, 253, 65);
+    font-family: 'Poppins', sans-serif;
+}
+
+.ebox{
+    background: transparent;
+}
+
+.trial input{
+    height: 40px;
+    width: 400px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 5px;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+.trial button{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(178, 253, 65);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.trial-cont{
+    background-color: rgb(178, 253, 65);
+}
+
+.trial-cont p{
+    font-size: 30px;
+    background-color: transparent;
+    color: black;
+    font-weight: 600;
+}
+
+.trial-cont p1{
+    background-color: transparent;
+    color: black;
+    font-size: 500;
+}
+
+.fbox{
+    margin-top: 50px;
+    border-top: 1px solid rgb(128, 127, 127);
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    width: 100vw;
+}
+
+.fbox1{
+    color: rgb(133, 133, 133);
+    height: 14vh;
+    width: 400px;
+}
+
+.fbox1 ul{
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fbox1 li:hover{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+.fbox2{
+    height: 14vh;
+    width: 200px;
+    margin-right: 50px;
+}
+
+.fbox2 ul{
+    height: 14vh;
+    width: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-cont{
+    height: 50vh;
+    width: 100vw;
+    margin-left: 50px;
+    color: rgb(184, 184, 184);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MuseoModerno', cursive;
+}
+
